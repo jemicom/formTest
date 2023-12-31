@@ -24,14 +24,16 @@
       }
       input:blur {
       }
+      .userid {
+      }
+      #form {
+      }
     </style>
     <script></script>
-    <script defer src="./script/script.js"></script>
   </head>
   <body>
     <h1>javascript</h1>
     <form action="" id="form">
-      <!-- <div onclick="alert('hello')"> -->
       <div>
         <label for="userid">아이디</label>
         <input
@@ -47,11 +49,26 @@
       </div>
     </form>
     <script>
-      // 브라우저 웹처리 하는 방식
-      // html(구조를 만들고) > css(디자인) : 파싱
-      // 중간 js를 만나면 파싱을 멈추고 js 실행해버림 : 화면에 뜨지 않으므로 느려짐
-      // script를 body 추가하면 파싱 모두 처리한 후 js 처리
-      // header에 추가해서 파싱 처리가 끝난 후 js 처리하게 하는 예약어 defer, async
+      // 변수 : 메모리 저장소
+      // 선언법 3가지
+      // var 영문자+숫자 = 값
+      var elh1 = document.querySelector("h1");
+      elh1.style.color = "yellow";
+      // 옛날 방식 : 오류 발생 확율이 높은 방식
+
+      // ES5 이후 방식
+      let label = document.querySelector("label");
+      label.style.background = "green";
+
+      const KEY = "934085023942002398-4358-34";
+
+      // 변수명 만드는 규칙
+      // 영문자+숫자+_$
+      // 특수문자는 사용할 수 없음
+      // 대소자 구분
+      let api;
+      let API;
+      let Api;
     </script>
   </body>
 </html>
